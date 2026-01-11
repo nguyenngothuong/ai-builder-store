@@ -139,18 +139,7 @@ export const pricingData: PricingCategory[] = [
         warranty: 'BHF',
         isOwner: true,
       },
-      {
-        tool: 'Veo Ultra',
-        package: '25k credit',
-        price: '25k',
-        warranty: 'BHF',
-      },
-      {
-        tool: 'Veo Ultra',
-        package: '45k credit',
-        price: '45k',
-        warranty: 'BHF',
-      },
+
       {
         tool: 'Veo Ultra',
         package: '45k credit + Gemini Ultra (cấp)',
