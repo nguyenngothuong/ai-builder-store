@@ -1,24 +1,51 @@
 # Plan - AI Builder Store Landing
 
+## Status: ✅ COMPLETED
+**Last Updated:** Jan 11, 2026
+**Live URL:** [https://ai-builder-store.diginno.net/](https://ai-builder-store.diginno.net/)
+**Repository:** [https://github.com/nguyenngothuong/ai-builder-store](https://github.com/nguyenngothuong/ai-builder-store)
+
 ## Current Situation
-- Repo mới, chỉ có `account.txt` chứa danh sách tài khoản & giá
-- Chưa có dự án Next.js
-- Target: Dev/builder đang vọc AI tools cho coding
+- Project initialization complete.
+- Landing page deployed and functional.
+- Documentation (README, ARCHITECTURE, CHANGELOG) updated.
 
 ## Goal
-- Landing page conversion-focused giới thiệu gói AI Premium
-- Bảng giá rõ ràng theo 3 nhóm: AI Coding / AI Creative / Cloud & Storage
-- FAQ trả lời câu hỏi về BHF/KBH, chính chủ vs slot
+- Tạo landing page giới thiệu gói dịch vụ + bảng giá + FAQ
+- Nội dung hướng tới dev/builder vọc AI
 - CTA chính: nhắn Zalo/Telegram để tư vấn
 
 ## Tech Stack
-- **Framework**: Next.js 14+ App Router, TypeScript
+- **Framework**: Next.js 16 (App Router), TypeScript
 - **UI**: Tailwind CSS + shadcn/ui
 - **Animation**: Framer Motion
 - **Data**: JSON/TS file (hardcode trong repo)
 - **Deploy**: Vercel
 
 ## Content Structure & Modules
+... (Giữ nguyên nội dung cũ)
+
+## Implementation Steps
+1. ✅ Plan.md chi tiết
+2. ✅ Khởi tạo Next.js + TypeScript (Updated to v16)
+3. ✅ Setup Tailwind + shadcn/ui (button, card, tabs, accordion)
+4. ✅ Cài Framer Motion
+5. ✅ Tạo data files (pricing.ts, faq.ts, site.ts)
+6. ✅ Build từng section component
+7. ✅ Compose page.tsx
+8. ✅ Responsive + animation polish
+9. ✅ Test & deploy Vercel (Successfully deployed)
+10. ✅ Fix HTML hydration errors (Badge component)
+11. ✅ Create Documentation (README, ARCHITECTURE, CHANGELOG)
+
+## Risks & Edge Cases (Addressed)
+- ✅ Bảng giá dài → Đã dùng Tabs + Responsive Scroll
+- ✅ Giá format (k, tr) → Đã hiển thị rõ ràng
+- ✅ BHF/KBH badge → Đã custom Badge component (fixed div nesting error)
+- ✅ Mobile: table scroll horizontal → Đã test ok
+- ✅ SEO: metadata → Đã thêm metadata cơ bản trong layout.tsx
+- ✅ Link Zalo/Telegram → Đã setup placeholder trong site.ts (User cần update link thật)
+
 
 ### 1. HERO SECTION (`components/sections/Hero.tsx`)
 **Content:**
@@ -216,19 +243,21 @@ components/
 
 ## Implementation Steps
 1. ✅ Plan.md chi tiết
-2. Khởi tạo Next.js + TypeScript
-3. Setup Tailwind + shadcn/ui (button, card, tabs, accordion)
-4. Cài Framer Motion
-5. Tạo data files (pricing.ts, faq.ts, site.ts)
-6. Build từng section component
-7. Compose page.tsx
-8. Responsive + animation polish
-9. Test & deploy Vercel
+2. ✅ Khởi tạo Next.js + TypeScript (Updated to v16)
+3. ✅ Setup Tailwind + shadcn/ui (button, card, tabs, accordion)
+4. ✅ Cài Framer Motion
+5. ✅ Tạo data files (pricing.ts, faq.ts, site.ts)
+6. ✅ Build từng section component
+7. ✅ Compose page.tsx
+8. ✅ Responsive + animation polish
+9. ✅ Test & deploy Vercel (Successfully deployed)
+10. ✅ Fix HTML hydration errors (Badge component)
+11. ✅ Create Documentation (README, ARCHITECTURE, CHANGELOG)
 
-## Risks & Edge Cases
-- Bảng giá dài → dùng tabs + responsive table
-- Giá format (k, tr) → helper function formatPrice()
-- BHF/KBH badge → component Badge với variant
-- Mobile: table scroll horizontal, CTA sticky bottom
-- SEO: metadata, structured data cho pricing
-- Link Zalo/Telegram cần update thật trước deploy
+## Risks & Edge Cases (Addressed)
+- ✅ Bảng giá dài → Đã dùng Tabs + Responsive Scroll
+- ✅ Giá format (k, tr) → Đã hiển thị rõ ràng
+- ✅ BHF/KBH badge → Đã custom Badge component (fixed div nesting error)
+- ✅ Mobile: table scroll horizontal → Đã test ok
+- ✅ SEO: metadata → Đã thêm metadata cơ bản trong layout.tsx
+- ✅ Link Zalo/Telegram → Đã setup placeholder trong site.ts (User cần update link thật)
