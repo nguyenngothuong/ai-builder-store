@@ -1,156 +1,122 @@
-# AI Builder Store - Landing Page
+# AI Builder Store 🚀
 
-Landing page giới thiệu tài khoản AI Premium cho developer và builder.
+> Nền tảng cung cấp tài khoản AI Premium & Cloud Storage chất lượng cao dành riêng cho Developer và Builder.
 
-## Tech Stack
+[![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC)](https://tailwindcss.com/)
+[![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-latest-black)](https://ui.shadcn.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/)
 
-- **Framework**: Next.js 15 (App Router)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **UI Components**: shadcn/ui
-- **Animation**: Framer Motion
-- **Icons**: Lucide React
+## 🌟 Giới thiệu
 
-## Features
+**AI Builder Store** là landing page tối ưu chuyển đổi, giúp Developer dễ dàng tra cứu và đăng ký các gói tài khoản như Cursor Pro, ChatGPT Team, Gemini Ultra, và Google One với mức giá tối ưu nhất.
 
-✅ Hero section với CTA rõ ràng  
-✅ Trust bar thể hiện uy tín  
-✅ Pain points giải quyết vấn đề khách hàng  
-✅ Solution section  
-✅ Bảng giá 3 tabs: AI Coding / AI Creative / Cloud & Storage  
-✅ Why Us - 4 lý do chọn dịch vụ  
-✅ FAQ accordion  
-✅ Final CTA với Zalo/Telegram  
-✅ Responsive design  
-✅ Smooth animations  
+Dự án được xây dựng với mục tiêu: **Nhanh - Đẹp - Dễ tùy biến**.
 
-## Getting Started
+## ✨ Tính năng chính
 
-### 1. Install dependencies
+- **🎨 Modern UI/UX**: Thiết kế hiện đại, dark-themed, phù hợp với gu của lập trình viên.
+- **⚡ High Performance**: Điểm PageSpeed cao nhờ Next.js App Router và tối ưu tài nguyên.
+- **📱 Fully Responsive**: Hiển thị hoàn hảo trên mọi thiết bị (Mobile, Tablet, Desktop).
+- **🔄 Smooth Animations**: Hiệu ứng chuyển động mượt mà với Framer Motion.
+- **💰 Smart Pricing Tables**: Bảng giá chia tab thông minh (Coding / Creative / Cloud), dễ so sánh.
+- **❓ FAQ System**: Hệ thống câu hỏi thường gặp dạng Accordion.
+- **📞 Direct CTA**: Tích hợp nút liên hệ Zalo/Telegram trực tiếp.
 
-```bash
-npm install
-```
+## 🛠 Tech Stack
 
-### 2. Run development server
+- **Core**: [Next.js 16](https://nextjs.org/) (App Router)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components**: [shadcn/ui](https://ui.shadcn.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Animation**: [Framer Motion](https://www.framer.com/motion/)
 
-```bash
-npm run dev
-```
+## 🚀 Cài đặt & Chạy dự án
 
-Mở [http://localhost:3000](http://localhost:3000) để xem kết quả.
+### Yêu cầu
+- Node.js 18+
+- npm hoặc yarn/pnpm/bun
 
-### 3. Build for production
+### Các bước thực hiện
 
-```bash
-npm run build
-npm start
-```
+1. **Clone repository**
+   ```bash
+   git clone https://github.com/nguyenngothuong/ai-builder-store.git
+   cd ai-builder-store
+   ```
 
-## Cấu hình
+2. **Cài đặt dependencies**
+   ```bash
+   npm install
+   ```
 
-### Cập nhật link Zalo/Telegram
+3. **Chạy môi trường Development**
+   ```bash
+   npm run dev
+   ```
+   Truy cập `http://localhost:3000` để xem kết quả.
 
-Mở file `lib/data/site.ts` và cập nhật:
+4. **Build cho Production**
+   ```bash
+   npm run build
+   npm start
+   ```
 
+## ⚙️ Hướng dẫn tùy chỉnh (Customization)
+
+Bạn có thể thay đổi toàn bộ nội dung trang web mà không cần sửa code giao diện, chỉ cần chỉnh sửa các file dữ liệu trong thư mục `lib/data/`.
+
+### 1. Thay đổi thông tin liên hệ (Zalo/Telegram)
+Mở file `lib/data/site.ts`:
 ```typescript
 export const siteConfig = {
   // ...
   cta: {
-    zalo: 'https://zalo.me/your-zalo-id', // ← Thay bằng link Zalo của bạn
-    telegram: 'https://t.me/your-telegram-id', // ← Thay bằng link Telegram của bạn
+    zalo: 'https://zalo.me/SĐT_CUA_BAN',       // <--- Thay link Zalo
+    telegram: 'https://t.me/USERNAME_CUA_BAN', // <--- Thay link Telegram
   },
+  // ...
 };
 ```
 
-### Chỉnh sửa giá
-
-Mở file `lib/data/pricing.ts` để cập nhật bảng giá.
-
-### Chỉnh sửa FAQ
-
-Mở file `lib/data/faq.ts` để thêm/sửa câu hỏi thường gặp.
-
-## Cấu trúc thư mục
-
-```
-landing-account/
-├── app/
-│   ├── layout.tsx       # Root layout
-│   ├── page.tsx         # Landing page chính
-│   └── globals.css      # Tailwind + custom CSS
-├── components/
-│   ├── sections/        # Các section của landing page
-│   │   ├── Hero.tsx
-│   │   ├── TrustBar.tsx
-│   │   ├── PainPoints.tsx
-│   │   ├── Solution.tsx
-│   │   ├── PricingTabs.tsx
-│   │   ├── WhyUs.tsx
-│   │   ├── FAQ.tsx
-│   │   └── FinalCTA.tsx
-│   ├── layout/
-│   │   └── Footer.tsx
-│   └── ui/              # shadcn/ui components
-├── lib/
-│   ├── data/
-│   │   ├── pricing.ts   # Dữ liệu bảng giá
-│   │   ├── faq.ts       # Dữ liệu FAQ
-│   │   └── site.ts      # Config site
-│   └── utils.ts         # Utility functions
-└── docs/
-    ├── Plan.md          # Kế hoạch chi tiết
-    └── account.txt      # Dữ liệu gốc
-```
-
-## Deploy
-
-### Vercel (Recommended)
-
-1. Push code lên GitHub
-2. Import vào Vercel
-3. Deploy tự động
-
-### Cloudflare Pages
-
-1. Build project: `npm run build`
-2. Upload folder `.next` lên Cloudflare Pages
-
-## Customization
-
-### Màu sắc
-
-Chỉnh sửa `app/globals.css` để thay đổi theme colors:
-
-```css
-:root {
-  --primary: 240 5.9% 10%;
-  --primary-foreground: 0 0% 98%;
-  /* ... */
+### 2. Cập nhật Bảng giá
+Mở file `lib/data/pricing.ts`. Bạn có thể thêm/sửa/xóa các mục trong mảng `items`:
+```typescript
+{
+  tool: 'Tên Công Cụ',
+  package: 'Tên Gói',
+  price: 'Giá Tiền',
+  note: 'Ghi chú thêm (optional)',
+  warranty: 'BHF', // hoặc 'KBH'
+  isHighlight: true, // true nếu muốn làm nổi bật
 }
 ```
 
-### Font
+### 3. Cập nhật FAQ
+Mở file `lib/data/faq.ts` để sửa đổi câu hỏi và câu trả lời.
 
-Chỉnh sửa `app/layout.tsx` để đổi font:
+## 📂 Cấu trúc thư mục
 
-```typescript
-import { YourFont } from "next/font/google";
-
-const yourFont = YourFont({ subsets: ["latin", "vietnamese"] });
+```
+ai-builder-store/
+├── app/                 # Logic routing và layout chính
+├── components/          #
+│   ├── ui/              # Các component cơ bản (Button, Card...)
+│   ├── sections/        # Các phần nội dung trang (Hero, Pricing...)
+│   └── layout/          # Header, Footer
+├── lib/
+│   └── data/            # Nơi chứa dữ liệu (Giá, FAQ, Config)
+└── public/              # Hình ảnh, icon tĩnh
 ```
 
-## TODO
+## 🤝 Đóng góp (Contributing)
 
-- [ ] Cập nhật link Zalo/Telegram thật
-- [ ] Thêm Google Analytics
-- [ ] Tối ưu SEO (structured data, Open Graph)
-- [ ] Add dark mode toggle (optional)
+Mọi đóng góp đều được hoan nghênh! Vui lòng tạo Pull Request hoặc mở Issue nếu bạn tìm thấy lỗi.
 
-## License
+## 📄 License
 
-Private project - AI Builder Store
+Dự án này thuộc sở hữu của **AI Builder Store**.
 
 ---
-
-Built with ❤️ by Diginno Engineering
+Built with ❤️ by **Diginno Engineering**
