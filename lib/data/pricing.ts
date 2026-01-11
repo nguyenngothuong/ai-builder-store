@@ -39,7 +39,7 @@ export const pricingData: PricingCategory[] = [
       {
         tool: 'Cursor',
         package: 'Ultra chính chủ',
-        price: 'Liên hệ',
+        price: '3tr/tháng',
         warranty: 'BHF',
         isOwner: true,
       },
