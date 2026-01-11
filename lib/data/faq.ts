@@ -5,6 +5,11 @@ export type FAQItem = {
 
 export const faqData: FAQItem[] = [
   {
+    question: 'Mua Antigravity thì cần lưu ý gì?',
+    answer:
+      'Trước khi mua, bạn cần check mail và thử đăng nhập vào Antigravity trước. Nếu login được thì mới tiến hành add vào family plan.',
+  },
+  {
     question: 'BHF và KBH nghĩa là gì?',
     answer: 'BHF = Bảo hành full (đổi mới nếu có vấn đề). KBH = Không bảo hành (giá rẻ hơn, phù hợp dùng thử).',
   },
