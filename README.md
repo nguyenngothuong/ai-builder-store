@@ -6,6 +6,11 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC)](https://tailwindcss.com/)
 [![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-latest-black)](https://ui.shadcn.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/)
+[![Vercel](https://img.shields.io/badge/Vercel-Deployed-black)](https://ai-builder-store.diginno.net/)
+
+## 🌐 Live Demo
+
+👉 **Trải nghiệm ngay tại:** [https://ai-builder-store.diginno.net/](https://ai-builder-store.diginno.net/)
 
 ## 🌟 Giới thiệu
 
