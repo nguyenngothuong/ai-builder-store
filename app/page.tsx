@@ -4,6 +4,7 @@ import { TrustBar } from '@/components/sections/TrustBar';
 import { PainPoints } from '@/components/sections/PainPoints';
 import { Solution } from '@/components/sections/Solution';
 import { PricingTabs } from '@/components/sections/PricingTabs';
+import { GLMPromo } from '@/components/sections/GLMPromo';
 import { WhyUs } from '@/components/sections/WhyUs';
 import { FAQ } from '@/components/sections/FAQ';
 import { FinalCTA } from '@/components/sections/FinalCTA';
@@ -18,6 +19,7 @@ export default function Home() {
       <PainPoints />
       <Solution />
       <PricingTabs />
+      <GLMPromo />
       <WhyUs />
       <FAQ />
       <FinalCTA />
